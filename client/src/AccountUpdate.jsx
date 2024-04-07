@@ -33,8 +33,7 @@ const AccountUpdate = () => {
 
     const getUserDetails = async () => {
         try {
-            let result = await fetch(`http://localhost:5000/user/${params.id}`
-            );
+            let result = await fetch(`http://localhost:5000/userupdate/${params.id}`);
             result = await result.json();
             setUserDetails(result);
             setName(result.name);
@@ -56,8 +55,7 @@ const AccountUpdate = () => {
                 method: "PUT",
                 body: JSON.stringify({ name, email, password }),
                 headers: {
-                    "Content-Type": "application/json",
-                    
+                    "Content-Type": "application/json"
                 }
             });
 
@@ -83,8 +81,6 @@ const AccountUpdate = () => {
             localStorage.setItem('user', JSON.stringify(userDetails)); // Set local storage after userDetails is updated
         }
     }, [userDetails]);
- 
-
 
     const searchbutton = () => {
         setShow(true);
