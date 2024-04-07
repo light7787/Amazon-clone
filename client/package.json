@@ -1,22 +1,19 @@
 {
-  "name": "sastaamazon",
-  "private": true,
-  "version": "0.0.0",
+  "name": "your-project-name",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "dev": "vite"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-   
+    "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
-    "@mui/icons-material": "^5.15.15",
-    "@mui/material": "^5.15.15",
-    "fetch": "^1.1.0",
-    "firebase": "^10.7.2",
+    "@mui/icons-material": "^5.15.14",
+    "@mui/material": "^5.15.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.1.0",
@@ -24,17 +21,7 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    
-    "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.17",
-    "eslint": "^9.0.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "nodemon": "^3.1.0",
-    "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1",
-    "vite": "^5.0.8"
+    "vite": "^5.2.8"
   }
 }

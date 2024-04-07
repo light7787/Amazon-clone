@@ -79,7 +79,7 @@ app.get("/users",async(req,res)=>{
         res.send({result:"No products found"})
     }
 })
-app.get("/userupdate/:id",verifyToken ,async(req,res)=>{
+app.get("/userupdate/:id" ,async(req,res)=>{
     let User =await user.findOne({_id:req.params.id});
     console.log(User);
 
@@ -116,7 +116,7 @@ app.put('/product/:id',async(req,res)=>{
 })
 
 
-app.put('/userupdate/:id',verifyToken ,async(req,res)=>{
+app.put('/userupdate/:id' ,async(req,res)=>{
     let result = await user.updateOne(
         {_id:req.params.id},
         {$set:req.body}

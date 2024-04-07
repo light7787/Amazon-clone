@@ -7,7 +7,7 @@ import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 import { NavLink } from 'react-router-dom';
 const Accounts = () => {
   const auth = localStorage.getItem("user");
-  const user = JSON.parse(auth);
+  const user = auth ? JSON.parse(auth) : null;
   return (
     <div>
   <Header></Header>
